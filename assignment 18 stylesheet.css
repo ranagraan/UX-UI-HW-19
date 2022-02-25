@@ -1,0 +1,239 @@
+body {
+  
+    margin : 0;
+    background: #E3BC9A;;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 300;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    
+  }
+
+
+  
+input,
+label {
+
+  margin: 0.4rem, 0; 
+  display: flex;
+  align-items: center;
+
+}
+
+span::after {
+
+  padding-left: 5px;
+}
+
+input:invalid + span::after   {
+  content: 'Failure';
+}
+
+input:valid+span::after {
+  content: 'Success'
+}
+
+
+section {
+    display: block;
+    padding-left: 10%;
+    padding-top: 5%
+  } 
+
+
+  .container  {
+    width: 80%;
+    margin: 0 auto;
+    
+  }
+  
+  header
+  
+  {
+    background: #E3BC9A;
+  }
+  
+  header::after  {
+    
+    content: '';
+    display: table;
+    clear: both;
+  }
+  
+  
+  .logo {
+    
+    float: left;
+    padding-left: 0px;
+    padding: 1%;
+    width: 23%;
+    
+      
+  }
+  
+  
+  nav  {
+    float: right;
+    
+    
+  }
+  
+  nav ul {
+    margin: 0;
+    padding: 0%;
+    list-style: none;
+    --width: 73%;
+    
+    
+  }
+  
+  
+  nav li {
+    display: inline-block;
+    
+    margin-left: 60px;
+    padding-top: 20px;
+    
+    position: relative;
+  
+    
+  }
+  
+  
+  nav a {
+    color: #444;
+    text-transform: camel case;
+    }
+  
+  
+  nav a::before {
+    
+    content: '';
+    display: block;
+    height: 5px;
+    width: 0%;
+    background-color: #444;
+    
+    
+    position: absolute;
+    top: 0;
+    width: 0%;
+    
+    transition: all ease-in-out 250ms;
+      
+    
+  }
+  
+  nav a:hover::before {
+    
+    width: 100%;
+  }
+  
+  
+  nav a:hover {
+    
+    color: #000;
+    
+  }
+  
+  .herolmg {
+    background: #E3BC9A;
+    height: 600px;
+    padding: 25px;
+    
+    
+    
+  }
+
+
+  .flexContainer {
+
+    background: #E3BC9A;
+    height: 600px;
+    padding: 25px;
+    width: 33%;
+    margin: 10px;
+    flex-direction: column-reverse;
+  
+  }
+
+  .grid-container {
+    display: inline-grid;
+    grid-template-columns: auto auto auto;
+    background-color: #f321a333;
+    padding: 10px;
+  }
+  
+  .grid-item {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+    grid-template-rows: 10%;
+  }
+
+
+  
+  footer
+  
+  {
+    background: #373738;
+  }
+  
+  
+  .herolmg  {
+    width: 100%;
+    margin: 0 auto;
+    padding:50px;
+    
+  }
+
+@media only screen and (max-width: 600)
+{
+  .flexContainer {
+
+    background: #E3BC9A;
+    height: 600px;
+    padding: 25px;
+    width: 33%;
+    margin: 10px;
+    flex-direction: column-reverse;
+  
+  }
+}
+
+#categoryGrid { 
+  margin: 0px 5%;
+  display: grid;
+  grid-template-rows: 300px 300px 300px ; 
+  grid-template-columns:1fr 1fr 1fr ;
+  grid-template-areas:"" ;
+}
+
+
+.form-control {
+  margin-bottom: 10px;
+  padding-bottom: 20px;
+  position: relative;
+}
+
+
+.form-control label {
+  display: inline-block;
+  margin-bottom: 5px;
+  
+}
+
+
+.form-control input {
+  border: 2px solid #f0f0f0;
+  border-radius: 4px;
+  font-family: inherit ;
+  display: block;
+  width: 100px
+  
+}
+
+
